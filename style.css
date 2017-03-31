@@ -1,0 +1,210 @@
+/*
+Theme Name: Monkey's Uncle
+Theme URI: 
+Author: Marshall Carter
+Author URI: 
+Description: Wordpress theme for blog website. 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: monkeys-uncle
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body {
+	padding-top: 50px;
+	padding-bottom: 20px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.admin-bar, .navbar-fixed-top {
+	margin-top: 30px;
+}
+
+@media (min-width:768px) {
+	.sub-menu {
+		display: none;
+		position: absolute;
+		background: #222;
+		padding: 10px 15px;
+		width: 200px;
+	}
+
+	li:hover .sub-menu {
+		display: block;
+	}
+}
+
+.sub-menu li {
+	margin-bottom: 10px;
+	list-style: none;
+}
+
+.sub-menu li:last-child {
+	margin-bottom: 0;
+}
+
+.sub-menu a  {
+	color: #999;
+	text-decoration: none;
+}
+
+.sub-menu a:hover  {
+	color: #fff;
+}	
+
+.current-menu-item > a, .current-menu-parent > a {
+	background: #000;
+}
+.current-menu-parent li a {
+	background: inherit;
+}
+.current-menu-parent .current-menu-item a {
+	color: #fff;
+	font-weight: bold;
+}
+
+.tool-list ol {
+	padding-top: 5px;
+}
+.tertiary { 
+	padding-top: 5px;
+	margin-left: 5px;
+}
+.tertiary h2 {
+	text-align: center;
+}
+.textwidget p {
+	color: #444;
+}
+
+.widget {
+	margin: 10px 0 30px;
+}
+
+.widget h3 {
+	color: #888;
+}
+
+/* Helper classes ------------ */
+@media( min-width: 768px ) {
+	.no-pad {
+		padding: 0;
+	}
+}
+@media( min-width: 320px ) {
+		.row {
+		padding-left: 10px;
+	}
+}
+/* Header -------------- */
+header .title {
+	text-align: right;
+	margin-top: 1%;
+	height: 130px;
+	border-radius: 4px;
+}
+header .h1-title h1 {
+	padding: 30px;
+	font-size: 50px;
+	color: black;
+    font-weight: 300;
+    margin-top: 	0%;
+}
+header .blue-button {
+	margin-top: 5%;
+}
+.container p {
+	text-align: left;
+}
+.wrapper {
+	padding-top: 90px;
+}
+.container h1 {
+	color: black;
+	display: block;
+	margin: 0 auto;
+	border-radius: 10px;
+	max-width: 100%;
+    height: auto;
+}
+
+.hours p {
+	color: white;
+	font-size: 20px;
+}
+
+.content a {
+	color: inherit;
+}
+.content img {
+	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
+}
+.content h2 {
+	padding-top: 5px;
+}
+
+.blog p img {
+	padding-top: 10px;
+	text-align: left;
+	margin-left: 20px;
+}
+
+/* Button Styles------------- */
+.blue-btn {
+	padding: 15px 35px;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 600;
+	background: #99bdf7;
+	transition: .5s;
+	border-radius: 4px;
+}
+.blue-btn:hover {
+	text-decoration: none;
+	color: #99bdf7;
+	border: 1px solid #99bdf7;
+	border-radius: 4px;
+	background: #fff;
+}
+
+.section {
+	float: left;
+	padding-top: 10px;
+	margin-left: 10px;
+}
+
+.copyright p {
+	text-align: center;
+	color: black;
+	font-size: 10px;
+}
+.social-icon {
+	text-align: center;
+	padding-bottom: 5px;
+}
+.row p {
+	padding: 10px;
+}
+
+ul {
+	list-style: none;
+}
+
+.post-meta li {
+	margin-left: -27px;
+}
+
+.post-meta-key {
+	display: none;
+}
+
+
+
