@@ -17,7 +17,7 @@
 
 						<div class="social-icon">
 
-							<a href="https://twitter.com/@shadowpuck99"><img src="<?php echo esc_url( $twitter_img ) ?>" alt="twitter logo"></a>
+							<a href="#"><img src="<?php echo esc_url( $twitter_img ) ?>" alt="twitter logo"></a>
 
 						</div><!-- social-icon -->
 
