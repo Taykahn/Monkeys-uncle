@@ -10,33 +10,35 @@
 
 					<!-- Primary Column -->
 
-					<div class="col-sm-5">
+					<div class="primary">
 
-						<div class="primary">
+						<div class="col-sm-5">
 
 							<h1><?php the_title(); ?></h1>
 
 							<p><?php the_content(); ?></p>
 
-						</div><!-- end primary -->
+						</div><!-- end col-md-5 -->
 
-					</div><!-- end col-md-5 --> 
+					</div><!-- end primary --> 
 
 					<!--Secondary Column-->
 
-					<div class="col-sm-3">
+					<div class="secondary">
 
-						<div class="secondary">
+						<div class="col-sm-3">
 
 							<?php the_field( 'images' ); ?>
 
-						</div><!-- end secondary -->
+						</div><!-- end col-md-6 -->
 
-					</div><!-- end col-md-6 --> 
+					</div><!-- end secondary --> 
 
-					<div class="col-sm-4">
+					<!-- Tertiary Column -->
+				
+					<div class="tertiary">
 
-						<div class="tertiary">
+						<div class="col-sm-4">
 
 							<div class="warnings" style="background-color: yellow; border: solid; margin-right: 30px">
 
@@ -50,9 +52,9 @@
 
 							</div>
 
-						</div><!-- end tertiary -->
+						</div><!-- end col-sm-4 -->
 
-					</div><!-- end col-sm-4 -->
+					</div><!-- end tertiary -->
 
 				<?php endwhile ?>
 
