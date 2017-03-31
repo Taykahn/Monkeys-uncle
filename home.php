@@ -36,11 +36,7 @@ get_header() ?>
 
 				</div><!--.content-->
 
-				<aside class="col-md-4">
-
 				<?php get_sidebar() ?>
-
-				</aside>
 
 			</div><!--.row-->
 
