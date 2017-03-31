@@ -17,7 +17,7 @@ $weather2_img = CWS_Theme::cws_get_img( 'weather2.png', 'Weather Image' );
 
 		<h3>Local Weather</h3>
 
-		<a href="http://www.monkeysuncle.net/wxmonkey/usa.htm"><img src="<?php echo esc_url( $weather2_img ) ?>"></a>
+		<a href="#"><img src="<?php echo esc_url( $weather2_img ) ?>"></a>
 
 	</div><!-- end weather2 -->
 
