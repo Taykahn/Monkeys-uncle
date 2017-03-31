@@ -14,29 +14,29 @@ get_header() ?>
 
 					<!-- Primary Column -->
 
-					<div class="col-md-6">
+					<div class="primary">
 
-						<div class="primary">
+						<div class="col-md-6">
 
 							<h1><?php the_title(); ?></h1>
 
 							<p><?php the_content(); ?></p>
 
-						</div><!-- end primary -->
+						</div><!-- end col-md-6 --> 
 
-					</div><!-- end col-md-6 --> 
+					</div><!-- end primary -->
 
 					<!--Secondary Column-->
 
-					<div class="col-md-6">
+					<div class="secondary">
 
-						<div class="secondary">
+						<div class="col-md-6">
 
 							<?php the_post_thumbnail(); ?>
 
-						</div><!-- end secondary -->
+						</div><!-- end col-md-6 --> 
 
-					</div><!-- end col-md-6 --> 
+					</div><!-- end secondary -->
 
 				<?php endwhile ?>
 
