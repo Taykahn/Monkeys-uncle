@@ -12,29 +12,29 @@
 
 			<div class="row">
 
-			<?php while ( have_posts()) : the_post(); ?>
+				<?php while ( have_posts()) : the_post(); ?>
 
-				<div class="col-md-8">
+					<div class="col-md-8">
 
-					<h2><?php the_title(); ?></h2>
+						<h2><?php the_title(); ?></h2>
 
-					<hr>
+						<hr>
 
-					<?php the_content(); ?>
+						<?php the_content(); ?>
 
-					<?php the_post_thumbnail(); ?>
+						<?php the_post_thumbnail(); ?>
 
-			<?php endwhile ?>
+				<?php endwhile ?>
 
-			<?php wp_reset_postdata(); ?>
+				<?php wp_reset_postdata(); ?>
 
-				</div><!-- end col-md-8 -->
+					</div><!-- end col-md-8 -->
 
-				<div class="col-md-4">
+					<div class="col-md-4">
 
 					<?php get_sidebar(); ?>
 
-				</div><!-- end col-md-4 -->
+					</div><!-- end col-md-4 -->
 
 			</div><!-- end row -->
 
