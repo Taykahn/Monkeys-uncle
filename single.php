@@ -1,7 +1,7 @@
 <?php
 /**
-* Single Post Page
-*/
+ * Single Post Page
+ */
 ?>
 
 <?php get_header(); ?>
@@ -12,29 +12,23 @@
 
 			<div class="row">
 
-				<?php while ( have_posts()) : the_post(); ?>
+				<div class="col-md-9">
 
-					<div class="col-md-8">
+					<?php while ( have_posts()) : the_post(); ?>
 
-						<h2><?php the_title(); ?></h2>
+						<h2><?php the_field('title'); ?></h2>
 
-						<hr>
+						<img src="<?php the_field(); ?>" />
 
-						<?php the_content(); ?>
+						<?php the_field('text'); ?>
 
-						<?php the_post_thumbnail(); ?>
+					<?php endwhile ?>
 
-				<?php endwhile ?>
+					<?php wp_reset_postdata(); ?>
 
-				<?php wp_reset_postdata(); ?>
+				</div><!-- end col-md-8 -->
 
-					</div><!-- end col-md-8 -->
-
-					<div class="col-md-4">
-
-					<?php get_sidebar(); ?>
-
-					</div><!-- end col-md-4 -->
+				<?php get_sidebar(); ?>
 
 			</div><!-- end row -->
 

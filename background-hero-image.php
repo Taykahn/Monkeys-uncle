@@ -1,8 +1,8 @@
-<?php 
 /**
- * Template Name: Page
+ * Template Name: Background Hero
  */
-?>
+
+
 
 <?php get_header(); ?>
 
@@ -10,7 +10,7 @@
 
 		<div class="row">
 
-			<div class="col-md-8">
+			<div class="col-md-9">
 
 				<?php if ( have_posts() ) : ?>
 
@@ -24,21 +24,13 @@
 
 						<?php the_content(); ?>
 
-					<?php endwhile; else: ?>
-
-						<div class="page-header">
-
-							<h1>Oh no!</h1>
-
-						</div><!-- end page-header -->
-
-					<p>No content is appearing for this page!</p>
+					<?php endwhile; ?>
 
 				<?php endif; ?>
 
-		</div><!-- end row -->
+			</div><!-- end col-md-9 -->
 
-		<?php get_sidebar(); ?>
+		</div><!-- end row -->
 
 	</div><!-- end container -->
 

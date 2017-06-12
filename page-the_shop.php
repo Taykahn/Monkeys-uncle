@@ -1,31 +1,18 @@
 <?php 
 /**
- * Template Name: The Lift
+ * Template Name: The Shop
  */
 ?>
 
 <?php
 
-	$args = array( 
+	$args = array( 'post_type' => 'the_shop' );
 
-		'post_type' => 'the_lift',
-		'display' => "rand" 
+	$the_shop=new WP_Query( $args );
 
-	);
-
-	$the_lift=new WP_Query( $args );
-
-?>
+	?>
 
 <?php get_header(); ?>
-
-	<div id="lift-page-explanation">
-
-		<h2>On The Lift</h2>
-
-		<p>This page is about all the different cars I have had on my lift.</p>
-
-	</div><!-- end lift-page-explanation -->
 
 	<div class="container">
 
@@ -35,7 +22,7 @@
 
 				<div class="page-header">
 
-					<?php while ( $the_lift->have_posts() ) : $the_lift->the_post(); ?>
+					<?php while ( $the_shop->have_posts() ) : $the_shop->the_post(); ?>
 
 						<a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
 
@@ -44,6 +31,8 @@
 							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 
 						</div><!-- end lift-page-image -->
+
+						<p><?php the_content(); ?></p>
 
 					<?php endwhile; // end of the loop. ?>
 

@@ -1,53 +1,46 @@
 <?php
 /**
- * Single Lift
+ * Single The Lift
  */
+
 get_header() ?>
 
 	<section class="two-column row no-max pad">
 
 		<div class="col-md-12">
 
-			<div class="row">
+			<div class="row single-lift">
 
-				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+					<?php while ( have_posts() ) : the_post(); ?>
 
-					<!-- Primary Column -->
+						<div class="single-lift-page-header">
 
-					<div class="primary">
+							<h2><?php the_title(); ?></h2>
 
-						<div class="col-md-6">
+						</div><!-- single-lift-page-header -->
 
-							<h1><?php the_title(); ?></h1>
+						<!-- Primary Column -->
 
-							<p><?php the_content(); ?></p>
+						<div class="single-lift-image col-md-5">
 
-						</div><!-- end col-md-6 --> 
+								<?php the_post_thumbnail(); ?>
 
-					</div><!-- end primary -->
+						</div><!-- end primary -->
 
-					<!--Secondary Column-->
+						<!--Secondary Column-->
 
-					<div class="secondary">
+ 						<div class="single-lift-primary col-md-7">
 
-						<div class="col-md-6">
+							<p><?php the_content(); ?></p> 
 
-							<?php the_post_thumbnail(); ?>
+						</div><!-- end secondary -->
 
-						</div><!-- end col-md-6 --> 
-
-					</div><!-- end secondary -->
-
-				<?php endwhile ?>
-
-				<?php endif ?>
+					<?php endwhile ?>
 
 			</div><!-- end row -->
 
 		</div><!-- end col-md-12 -->
 
 	</section><!-- end two-column row no-max pad -->
-
-	<hr>
 
 <?php get_footer(); ?>

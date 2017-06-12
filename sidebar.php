@@ -1,25 +1,13 @@
 <?php 
 /**
-* Sidebar
-*/
-?>
- <?php
-
-$weather2_img = CWS_Theme::cws_get_img( 'weather2.png', 'Weather Image' ); 
-
+ * Sidebar
+ */
 ?>
 
-<div class="col-md-4 sidebar">
+
+<div class="col-md-3 sidebar">
 
 	<?php if ( ! dynamic_sidebar( 'page' )  ): ?>
-
-	<div class="weather2">
-
-		<h3>Local Weather</h3>
-
-		<a href="#"><img src="<?php echo esc_url( $weather2_img ) ?>"></a>
-
-	</div><!-- end weather2 -->
 
 <br>
 
@@ -33,15 +21,6 @@ $weather2_img = CWS_Theme::cws_get_img( 'weather2.png', 'Weather Image' );
 
 	<?php endif; ?>
 
-
-
 	<?php endif; ?>
 
 </div><!-- end col-md-3 sidebar -->
-
-
-
-
-
-
-

@@ -1,43 +1,47 @@
 <?php 
 /**
-* Template Name: Left Sidebar
-*/
-?>
-<?php get_header(); ?>
+ * Template Name: Left Sidebar
+ */
 
-<section class="two-column row no-max pad">
-	
-	<div class="small-12 columns">
-      	
-		<div class="row">
-          
-			<!-- Primary Column -->
-         		
-			<div class="primary">
+get_header();
+
+?>
+
+
+	<section class="two-column row no-max pad">
+
+		<div class="small-12 columns">
+
+			<div class="row">
+
+				<!-- Primary Column -->
 
 				<div class="small-12 medium-7 medium-offset-1 medium-push-4 columns">
 
-					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+					<div class="primary">
 
-						  <h1><?php the_title(); ?></h1>
-						  <p><?php the_content(); ?></p>
+						<?php if ( have_posts() ) : ?>
 
-					<?php endwhile; else : ?>
+							<?php while ( have_posts() ) : the_post(); ?>
 
-						<p><?php _e( 'Sorry, no pages found.' ); ?></p>
+								<h2><?php the_title(); ?></h2>
 
-					<?php endif; ?> 
+								<p><?php the_content(); ?></p>
 
-				</div><!-- small-12 medium-7 medium-offset-1 medium-push-4 columns -->
-			
-			</div><!-- end primary --> 
-		
-		<?php get_sidebar( 'page' ); ?>
+							<?php endwhile; ?>
 
-		</div><!-- end row -->
+						<?php endif; ?> 
 
-	</div><!-- small-12 columns -->
-		
-</section><!-- two-column row no-max pad -->
-              
+					</div><!-- end primary -->
+
+				</div><!-- end small-12 --> 
+
+			<?php get_sidebar( 'page' ); ?>
+
+			</div><!-- row -->
+
+		</div><!-- end small-12 columns -->
+
+	</section><!-- end two-column -->
+
 <?php get_footer(); ?>

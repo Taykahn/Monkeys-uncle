@@ -14,34 +14,46 @@ get_header() ?>
 
 	<section id="blog">
 
-		<div class="inner-wrapper container">
+	<div class="inner-wrapper container">
 
-			<div class="row">
+		<div class="row">
 
-				<div class="content col-md-8">
+			<div class="blog-content col-md-8">
 
-					<?php if ( $query->have_posts() ) : ?>
+				<?php if ( $query->have_posts() ) : ?>
 
-						<?php while ( $query->have_posts() ) : $query->the_post() ?>
+					<?php while ( $query->have_posts() ) : $query->the_post() ?>
 
-							<h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
+						<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 
-							<?php the_excerpt() ?>
+						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 
-							<?php the_post_thumbnail(); ?>
+						<p><?php the_content(); ?></p>
 
-						<?php endwhile ?>
+					<?php endwhile ?>
 
-					<?php endif ?>
+				<?php endif ?>
 
-				</div><!--.content-->
+			</div><!--.content-->
 
-				<?php get_sidebar() ?>
+			<?php get_sidebar() ?>
 
-			</div><!--.row-->
+		</div><!--.row-->
 
-		</div><!--.container-->
+	</div><!--.container-->
 
-	</section><!--#blog-->
+	<nav aria-label="...">
+
+		<ul class="pager">
+
+			<li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+
+			<li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+
+		</ul>
+
+	</nav>
 
 <?php get_footer() ?>
+
+	</section><!--#blog-->

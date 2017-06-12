@@ -1,27 +1,27 @@
 <?php get_header(); ?>
 
-  <section class="row">
+<section class="row">
 
-    <div class="small-12 columns text-center">
+	<div class="small-12 columns text-center">
 
-      <div class="leader">
+		<div class="leader">
 
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_posts(); ?>
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_posts(); ?>
 
-            <h1><?php the_title(); ?></h1>
+				<h1><?php the_title(); ?></h1>
 
-              <p><?php the_content(); ?></p>
+				<p><?php the_content(); ?></p>
 
-            <?php endwhile; else : ?>
+			<?php endwhile; else : ?>
 
-          <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+				<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 
-        <?php endif ?>
+			<?php endif ?>
 
-      </div><!-- end leader -->
+		</div><!-- end leader -->
 
-    </div><!-- small-12 columns text-center -->
+	</div><!-- small-12 columns text-center -->
 
-  </section><!-- row -->
+</section><!-- row -->
 
 <?php get_footer(); ?>

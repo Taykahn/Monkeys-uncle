@@ -6,111 +6,92 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="<?php bloginfo('template_directory');?>/images/favicon.ico">
+	<head>
 
-    <title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="<?php bloginfo('template_directory');?>/images/favicon.ico">
 
-      <?php wp_title( '|', true, 'right' ); ?>
+	<title>
 
-      <?php bloginfo('name'); ?>
+	<?php wp_title( '|', true, 'right' ); ?>
 
-    </title>
+	<?php bloginfo('name'); ?>
 
-    <!-- Google Fonts -->
+	</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<!-- Google Fonts -->
 
-    <?php wp_head() ?>
+	<link href="https://fonts.googleapis.com/css?family=Bangers|Open+Sans|Shrikhand" rel="stylesheet">
 
-    <?php 
-      global $post;
-      global $cws_img_path;
-      $post_slug = isset( $post->post_name ) ? $post->post_name : null;
-      $page_slug = 'page-'.$post_slug;
-      $fouc      = 'fouc';
-      $classes   = array( $page_slug );
-    ?>
+	<?php wp_head() ?>
 
-  </head>
+	<?php 
+		global $post;
+		global $cws_img_path;
+		$post_slug = isset( $post->post_name ) ? $post->post_name : null;
+		$page_slug = 'page-'.$post_slug;
+		$fouc      = 'fouc';
+		$classes   = array( $page_slug );
+	?>
 
-  <body <?php body_class( $classes ) ?>>
+	</head>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+<body <?php body_class( $classes ) ?>>
 
-      <div class="container">
+	<div class="parallax" style="background-image: url( '<?php echo the_field( 'hero', 327 ) ?>' )">
 
-        <div class="navbar-header">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
 
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			<div class="navbar-header">
 
-            <span class="sr-only">Toggle navigation</span>
+				<div class="navbar-brand logo">
 
-            <span class="icon-bar"></span>
+					<h1>Monkey's Uncle</h1>
 
-            <span class="icon-bar"></span>
+				</div><!-- end logo -->
 
-            <span class="icon-bar"></span>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 
-          </button><!-- end navbar-toggle collapsed -->
+					<span class="sr-only">Toggle navigation</span>
 
-        </div><!-- end navbar-header -->
+					<span class="icon-bar"></span>
 
-        <div id="navbar" class="navbar-collapse collapse">
+					<span class="icon-bar"></span>
 
-          <?php 
-            $args = array(
-              'menu'          => 'header-menu',
-              'menu_class'    => 'nav navbar-nav',
-              'container'     => 'false'
-            );
-            wp_nav_menu( $args );
-          ?>
+					<span class="icon-bar"></span>
 
-        </div><!--/.navbar-collapse -->
+				</button><!-- end navbar-toggle collapsed -->
 
-      </div><!-- end container -->
+			</div><!-- end navbar-header -->
 
-    </nav><!-- end navbar navbar-inverse navbar-fixed-top -->
+			<div id="navbar" class="navbar-collapse collapse">
 
-    <?php
+				<?php 
+					$args = array(
+					'menu'          => 'header-menu',
+					'menu_class'    => 'nav navbar-nav',
+					'container'     => 'false'
+				);
+					wp_nav_menu( $args );
+				?>
 
-      $banner_img = CWS_Theme::cws_get_img( 'monkey-tongue.png', 'Monkeys Uncle' ); 
+			</div><!--/.navbar-collapse -->
 
-    ?>
+	</nav><!-- end navbar navbar-inverse navbar-fixed-top -->
 
-      <header>
+		<header>
 
-        <div class="container-fluid no pad">
 
-          <div class="banner no-pad" style="background: url( '<?php echo $banner_img ?>' ) 50%/cover no-repeat; height: 500px;">
 
-            <div class="container"> 
+			<div class="container-fluid no pad">
 
-              <div class="title col-sm-12">
+					<div class="parallax" style="background-image: url( '<?php echo the_field( 'hero', 51 ) ?>' )">
 
-                <div class="h1-title col-sm-12' style="float: right;">
-          
-                  <h1>Monkey's Uncle</h1>
+			</div><!-- end container-fluid -->
 
-                </div><!-- end .h1-title -->
-
-              </div><!-- end title -->
-
-              </div><!-- end container -->
-
-            </div><!-- end banner -->
-
-          </div><!-- end container-fluid -->
-
-      </header>
-
-    <hr>
-
-   
+		</header>
 
 
 
