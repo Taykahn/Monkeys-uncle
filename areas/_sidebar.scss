@@ -1,0 +1,80 @@
+
+.sidebar {
+	margin-left: 43px;
+	background-color: $col-color;
+	border-radius: 5px;
+}
+
+.textwidget p {
+	color: #444;
+}
+
+.widget {
+	margin: 10px 0 30px;
+}
+
+.widget {
+	h3 {
+	color: #888;
+	}
+}
+
+.wu-search {
+	border: solid;
+}
+
+.wu-wrapper .wu-search input {
+	border-radius: 0px;
+}
+
+.wu-day-current-temp,
+.wu-cond-text {
+	color: #000;
+}
+.wu-current-conditions 
+.wu-cond-text, 
+.wu-current-conditions 
+.wu-cond-icon{
+	font-weight: bold;
+} 
+
+
+.rounded {
+	font-family: bangers;
+	font-size: 34px;
+	color: #000;
+	text-align: center;
+}
+
+@media ( max-width: 768px ) {
+	.sidebar {
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 25px;
+		margin-bottom: 20px;
+	}
+	.wu-wrapper .wu-search input {
+		padding-left: 79px;
+	}
+}
+
+//Chassis Sidebar 
+
+#sidebar-widget {
+	margin-left: 43px;
+	background-color: $col-color;
+	border-radius: 5px;
+	margin-top: -11px;
+	padding-bottom: 15px;
+	h2 {
+		padding-top: 10px;
+		font-size: 34px;
+	}
+	li {
+		font-size: 20px;
+		padding-left: 20px;
+	}
+}
+
+
+

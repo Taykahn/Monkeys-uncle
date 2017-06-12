@@ -1,0 +1,43 @@
+
+.parallax { 
+	min-height: 500px; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.page-header {
+	h1 {
+		text-align: center;
+		font-size: 50px;
+	}
+}
+ 
+.blog-content {
+	border-radius: $col-radius;
+	background-color:  $col-color;
+	margin-left: $col-margin-left;
+		a {
+			color: #000;
+		}
+	p {
+		margin-left: 10px;
+		text-align: center;
+		font-size: 17px;
+	}
+	img {
+		box-shadow: 5px 3px 12px #767a7b;
+		max-width: 100%;
+		text-align: center;
+	}
+}
+
+@media ( max-width: 768px ) {
+	.blog-content {
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 25px;
+		margin-bottom: 20px;
+	}
+}

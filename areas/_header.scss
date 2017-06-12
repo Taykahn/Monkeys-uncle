@@ -1,0 +1,27 @@
+
+.container-fluid {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+@media (max-width: 768px) {
+	.h1-title {
+		h1 {
+			font-size: 46px;
+			text-align: center;
+		}
+	}
+	.banner2 {
+	height: 300px;
+	}
+}
+
+@media (max-width: 768px) {
+	.logo {
+		h1 {
+			font-size: 30px;
+			padding-top: 5px;
+		}
+	}
+
+}

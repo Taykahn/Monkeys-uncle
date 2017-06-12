@@ -1,0 +1,21 @@
+.track-blog-page {
+	background-color: $col-color;
+	border-radius: $col-radius;
+	margin-left: $col-margin-left;
+	h2 {
+		padding-top: 10px;
+		padding-top: 7px;
+		font-size: 43px;
+	}
+}
+
+.track-blog-page {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+@media ( max-width: 768px ) {
+	.page-header {
+		padding-bottom: 0px;
+	}
+}

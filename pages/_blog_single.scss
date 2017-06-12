@@ -1,0 +1,14 @@
+.blog {
+	h2 {
+		font-size: 40px;
+	}
+	h3 {
+		text-align: center;
+	}
+}
+
+.blog-single {
+	background-color: $col-color;
+	border-radius: $col-radius;
+	margin-left: $col-margin-left;
+}

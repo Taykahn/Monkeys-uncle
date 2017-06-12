@@ -1,0 +1,33 @@
+.the-shop, .shop-single {
+	border-radius: $col-radius;
+	background-color:  $col-color;
+	margin-left: $col-margin-left;
+}
+
+.shop-single {
+	margin-left: 0px;
+}
+
+.shop-single-content {
+	padding-left: 15px;
+	padding-right: 15px;
+	h2 {
+		font-size: 35px;
+	}
+}
+
+.image-gallery {
+	p {
+		text-align: center;
+	}
+}
+
+@media ( max-width: 768px ) {
+	.image-gallery {
+		img {
+			background-color: $col-color;
+			border-radius: 5px;
+			margin-bottom: 10px;
+		}
+	}
+}

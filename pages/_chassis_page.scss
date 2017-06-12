@@ -1,0 +1,47 @@
+.chassis-header {
+	h2, p {
+		color: #000;
+		text-align: center;
+		padding-top: 7px;
+		font-family: Bangers;
+	}
+	h2 {
+		font-size: 55px;
+	}
+	p {
+		margin-bottom: 25px;
+		font-size: 35px;
+	}
+}
+
+.chassis-row {
+	margin-top: 0px;
+}
+
+.page-diy {
+	background-color: $col-color;
+	border-radius: $col-radius;
+	margin-left: $col-margin-left;
+	h1 {
+		padding: 12px;
+		text-align: center;
+		font-size: 50px;
+		color: #000;
+	}
+	img {
+		margin-top: 0px;
+	}
+}
+
+.chassis-title,
+.chassis-single-title {
+	h2 {
+		text-align: center;
+	}
+}
+
+@media (max-width: 768px) {
+	.page-diy {
+		margin-left: 0px;
+	}
+}

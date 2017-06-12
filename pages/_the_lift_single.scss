@@ -1,0 +1,17 @@
+.single-lift {
+	border-radius: $col-radius;
+	background-color:  $col-color;
+}
+
+.single-lift-page-header {
+	h2 {
+		font-size: 35px;
+		padding-bottom: 10px;
+	}
+}
+
+.single-lift-image {
+	img {
+		max-width: 100%;
+	}
+}
